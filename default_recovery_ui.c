@@ -20,7 +20,10 @@
 #include "common.h"
 #include "extendedcommands.h"
 
-char* MENU_HEADERS[] = { NULL };
+char* MENU_HEADERS[] = {"Volume up/down to move highlight;",
+                        "power button to select.",
+                        "",
+			NULL };
 
 char* MENU_ITEMS[] = { "reboot system now",
                        "install zip",

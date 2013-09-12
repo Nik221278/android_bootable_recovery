@@ -419,6 +419,9 @@ copy_sideloaded_package(const char* original_path) {
 static char**
 prepend_title(char** headers) {
     char* title[] = { EXPAND(RECOVERY_VERSION),
+#ifdef BOARD_IS_MTK
+                      EXPAND(RECOVERY_VERSION_INFO),
+#endif
                       "",
                       NULL };
 
